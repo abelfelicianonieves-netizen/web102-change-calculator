@@ -1,0 +1,375 @@
+/* Import our cartoon fonts */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;700&family=Pirata+One&display=swap');
+
+/* Style the whole website */
+body {
+  margin: 0;
+  background-color: #52b8e8;
+  font-family: 'Fredoka', sans-serif;
+  color: #3b210f;
+}
+
+/* Red pirate banner */
+.pirate-header {
+  background-color: #c91d27;
+  border-bottom: 5px solid #4b220d;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+/* Pirate skull */
+.pirate-logo {
+  font-size: 55px;
+}
+
+/* Main website title */
+.header-title h2 {
+  font-family: 'Pirata One', cursive;
+  font-size: 60px;
+  color: #ffd12a;
+  text-shadow: 3px 3px black;
+  margin: 0;
+}
+
+/* Subtitle */
+.header-title p {
+  font-family: 'Pirata One', cursive;
+  font-size: 28px;
+  color: white;
+}
+
+/* Pirate message */
+.pirate-message {
+  background-color: #ffe2a5;
+  border: 3px solid #6e3614;
+  padding: 10px;
+  font-weight: bold;
+  color: #4b220d;
+}
+
+/* Pizza decoration */
+.pizza-icon {
+  font-size: 50px;
+}
+
+/* Required heading for the assignment */
+.container > h1 {
+  font-size: 14px;
+  color: #4b220d;
+  margin-top: 10px;
+}
+
+/* Put Luffy and calculator side by side */
+.pirate-layout {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+/* Luffy section */
+.luffy-section {
+  width: 48%;
+  text-align: center;
+}
+
+/* Luffy picture */
+.luffy-image {
+  width: 100%;
+  max-width: 650px;
+}
+
+/* Calculator section */
+.pizza-box {
+  width: 52%;
+  background-color: #f7dfae;
+  border: 6px solid #8b4513;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 5px 7px 10px #555;
+}
+
+/* Calculator title */
+.calculator-title {
+  font-family: 'Pirata One', cursive;
+  font-size: 36px;
+  text-align: center;
+  color: #4b220d;
+  margin-bottom: 25px;
+}
+
+/* Rows for money inputs */
+.input-row {
+  background-color: #fff4dc;
+  border: 2px solid #d4a36a;
+  border-radius: 10px;
+  padding: 12px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Input labels */
+.input-row label {
+  width: 50%;
+  font-size: 18px;
+  font-weight: bold;
+  color: #4b220d;
+}
+
+/* Input boxes */
+.input-row input {
+  width: 50%;
+  background-color: white;
+  color: black;
+  border: 2px solid #c8a27b;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 18px;
+}
+
+/* Red calculate button */
+.calculate-button {
+  width: 100%;
+  background-color: #e62429;
+  color: white;
+  border: 3px solid #8e1717;
+  border-radius: 10px;
+  padding: 15px;
+  font-family: 'Pirata One', cursive;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Button changes when mouse is over it */
+.calculate-button:hover {
+  background-color: #b81520;
+}
+
+/* Your change heading */
+.change-title {
+  font-family: 'Pirata One', cursive;
+  font-size: 32px;
+  text-align: center;
+  color: #4b220d;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+
+/* Arrange five money boxes in a row */
+.change-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 8px;
+}
+
+/* Style all money boxes */
+.coin-card {
+  border: 2px solid #d4a36a;
+  border-radius: 10px;
+  padding: 10px 4px;
+  text-align: center;
+  color: #3b210f;
+}
+
+/* Money pictures */
+.coin-icon {
+  font-size: 30px;
+}
+
+/* Money numbers */
+.coin-card p {
+  font-size: 30px;
+  font-weight: bold;
+  color: #3b210f;
+}
+
+/* Money labels */
+.coin-card span {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* Different colors for each money box */
+.dollars {
+  background-color: #dff1d4;
+}
+
+.quarters {
+  background-color: #d7ecff;
+}
+
+.dimes {
+  background-color: #ffdedb;
+}
+
+.nickels {
+  background-color: #fff0c5;
+}
+
+.pennies {
+  background-color: #eadcff;
+}
+
+/* Adjust layout for smaller screens */
+@media (max-width: 900px) {
+  .pirate-header {
+    flex-wrap: wrap;
+  }
+
+  .pirate-layout {
+    flex-direction: column;
+  }
+
+  .luffy-section {
+    width: 100%;
+  }
+
+  .pizza-box {
+    width: 100%;
+  }
+
+  .header-title h2 {
+    font-size: 40px;
+  }
+}
+/* Make the red header visible */
+.pirate-header {
+  display: flex;
+  background-color: #c91d27;
+  align-items: center;
+  justify-content: space-around;
+  padding: 15px;
+}
+
+.header-title h2 {
+  color: #ffd12a;
+  font-size: 48px;
+}
+
+/* Put Luffy and the calculator next to each other */
+.pirate-layout {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 25px;
+}
+
+/* Stop Luffy from becoming too large */
+.luffy-section {
+  width: 45%;
+  flex-shrink: 0;
+}
+
+.luffy-image {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
+
+/* Keep the calculator on the right */
+.pizza-box {
+  width: 55%;
+  background-color: #f7dfae;
+  color: #3b210f;
+  padding: 20px;
+  border: 5px solid #8b4513;
+  border-radius: 15px;
+}
+
+/* Fix the pale text */
+.calculator-title,
+.change-title,
+.input-row label,
+.coin-card,
+.coin-card p,
+.coin-card span {
+  color: #3b210f;
+}
+
+/* Fix the black input boxes */
+.input-row input {
+  background-color: white;
+  color: black;
+}
+
+/* Make the calculate button red */
+.calculate-button {
+  background-color: #e62429;
+  color: white;
+  padding: 12px;
+}
+
+/* Keep the money boxes in one row */
+.change-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 8px;
+}
+
+.coin-card {
+  padding: 8px 2px;
+}
+
+.coin-card p {
+  font-size: 24px;
+}
+
+/* Adjust for smaller screens */
+@media (max-width: 800px) {
+  .pirate-layout {
+    flex-direction: column;
+  }
+
+  .luffy-section,
+  .pizza-box {
+    width: 100%;
+  }
+
+  .luffy-image {
+    max-width: 350px;
+  }
+}
+/* Keep Luffy and calculator side by side */
+.pirate-layout {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Give Luffy less space */
+.luffy-section {
+  width: 40%;
+  flex-shrink: 0;
+}
+
+/* Make Luffy smaller */
+.luffy-image {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+}
+
+/* Give calculator more space */
+.pizza-box {
+  width: 60%;
+  box-sizing: border-box;
+}
+
+/* Fit everything on smaller screens */
+@media (max-width: 700px) {
+  .pirate-layout {
+    flex-direction: column;
+  }
+
+  .luffy-section,
+  .pizza-box {
+    width: 100%;
+  }
+}
